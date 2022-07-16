@@ -1,0 +1,4 @@
+C:\Users\Justin\Documents\GitHub\Morta-Modz\Morta Modz\Morta Modz\Package\plugins\Morta Modz\Morta Modz.dll
+C:\Users\Justin\Documents\GitHub\Morta-Modz\Morta Modz\Morta Modz\obj\Release\Morta Modz.csproj.AssemblyReference.cache
+C:\Users\Justin\Documents\GitHub\Morta-Modz\Morta Modz\Morta Modz\obj\Release\Morta Modz.csproj.CoreCompileInputs.cache
+C:\Users\Justin\Documents\GitHub\Morta-Modz\Morta Modz\Morta Modz\obj\Release\Morta Modz.dll

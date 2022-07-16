@@ -3,7 +3,6 @@ using BepInEx.Logging;
 using HarmonyLib;
 using System.IO;
 using System.Reflection;
-using UnityEngine;
 
 namespace Morta_Modz
 {
@@ -24,18 +23,27 @@ namespace Morta_Modz
         public readonly string modFolder;
 
         #endregion
+        #region[Player]
 
+
+        #endregion
         public Main()
         {
             log = Logger;
             harmony = new Harmony(GUID);
             assembly = Assembly.GetExecutingAssembly();
             modFolder = Path.GetDirectoryName(assembly.Location);
+
         }
 
         public void Start()
         {
             harmony.PatchAll(assembly);
+        }
+
+        public void Update()
+        {
+
         }
     }
 }
