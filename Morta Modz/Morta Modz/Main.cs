@@ -50,16 +50,19 @@ namespace Morta_Modz
             {
                 _cheatMenu = FindObjectOfType<CheatMenu>();
                 _cheat = _cheatMenu.gameObject;
-                _cheat.SetActive(true);
-                Debug.LogWarning("Enabled CheatMenu GameObject!");
+                if (_cheat.gameObject.activeSelf == false)
+                {
+                    _cheat.gameObject.SetActive(true);
+                    return;
+                }
             }
             if (Input.GetKeyDown(KeyCode.Keypad1))
             {
-                _cheat.GetComponent<CheatMenu>().Show();
+                _cheatMenu.Show();
             }
             if (Input.GetKeyDown(KeyCode.Keypad2))
             {
-                _cheat.GetComponent <CheatMenu>().Hide();
+                _cheatMenu.Hide();
             }
         }
     }
